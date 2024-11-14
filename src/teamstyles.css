@@ -1,10 +1,67 @@
+body{
+    background-color: #9DC9CA;
+}
+
 /* TITLE */
 h1{
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 60px;
-    padding-top: 20px;
+    font-family: Fantasy, Copperplate;
+    font-size: 60px; 
+    margin-bottom: 10px;
+    padding: 0;
 }
+
+.logo{
+    height: 150px;
+    margin-left: 20px;
+    margin-bottom: -25px;
+}
+
+.header {
+    display: flex;                /* Enable flexbox layout */
+    align-items: center;          /* Vertically center the logo and nav items */
+    justify-content: space-between; /* Space between logo and nav items */
+    padding: 10px 20px;           /* Optional: Add some padding for spacing */
+}
+
+
+/* OVERALL NAVBAR */
+.navbar {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px; 
+    text-align: right;
+    height: 60px;
+    margin-top: 20px;
+
+}
+.navbar li{
+    display: inline-block;
+    margin: 5px;
+    text-align: center;
+    font-family: Papyrus, Fantasy;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+/* BUTTON CLASS FOR MAIN NAV */
+.btn a {
+    font-size: large;
+    display: inline-block;  
+    color: black;
+    padding: 10px;
+    border-radius: 20%;
+    transition: color 0.3s ease; 
+    margin-top: -10px;
+}
+
+.btn a:hover {
+    background-color: #FEDC86;
+    color: black;
+    text-decoration: none;
+}
+
 
 /* OVERALL GRID STYLING */
 .grid-container{
@@ -12,10 +69,14 @@ h1{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
+    margin: 10px;
 }
 .grid-item{
-    border: 2px solid black;
-    padding: 10px;
+    border-left: none;   /* Remove left border */
+    border-right: none;  /* Remove right border */
+    border-top: none;    /* Remove top border */
+    border-bottom: 2px solid black; 
+    padding: 40px;
 }
 .grid-item h2{
     text-align: center;
