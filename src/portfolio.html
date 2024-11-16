@@ -4,13 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Page</title>
-    <link rel="icon" type="image/x-icon" href="images/technify logo.png">
+    <link rel="icon" type="image/x-icon" href="images/technify_logo.png">
     <link rel="stylesheet" href="portfoliostyles.css">
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="nav-logo">
+            <img src="images/technify_logo.png" alt="Logo" class="logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#project1">NAU Foundation</a></li>
+            <li><a href="#project2">CoSoG Nepal</a></li>
+            <li><a href="#project3">Technify</a></li>
+        </ul>
+    </div>
 
-    
-    <h1>Portfolio</h1>
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1>Portfolio</h1>
+            <p>Selected web development projects.</p>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="projects">
+        <section id="project1" class="project-section">
+            <h2>NAU Foundation Website</h2>
+            <p>
+                Developed a website for the Paryavaran Shala initiative by the NAU Foundation to support nature-based solutions in education.
+            </p>
+            <ul>
+                <li>Implemented a research repository for accessible documentation on nature-based solutions.</li>
+                <li>Created a section for case studies to provide replicable examples of successful interventions.</li>
+                <li>Documented pilot projects with detailed information on challenges and outcomes.</li>
+                <li>Integrated geotagging to map schools suitable for interventions and visualize potential impact.</li>
+            </ul>
+        </section>
+
+        <section id="project2" class="project-section">
+            <h2>Coding for Social Good Nepal</h2>
+            <p>
+                Designed and deployed a website for CoSoG, a nonprofit promoting computer science education in Nepal.
+            </p>
+            <ul>
+                <li>Developed pages for general information about the organization and its mission.</li>
+                <li>Showcased ongoing projects and news updates.</li>
+                <li>Created a resource hub for event schedules and educational materials.</li>
+                <li>Collaborated with executives to design a functional and user-friendly interface.</li>
+            </ul>
+        </section>
+
+        <section id="project3" class="project-section">
+            <h2>Technify Website</h2>
+            <p>
+                Rebuilt Technify's website using Laravel framework to improve functionality and user experience.
+            </p>
+            <ul>
+                <li>Cleaned up and optimized the existing code base.</li>
+                <li>Redesigned the UI/UX for better usability and appearance.</li>
+                <li>Rehosted the website on Heroku with the domain technifyinitiative.org.</li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Portfolio</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
