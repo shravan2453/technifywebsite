@@ -3,75 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Page</title>
-    <link rel="icon" type="image/x-icon" href="images/technify_logo.png">
+    <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="images/technify logo.png">
     <link rel="stylesheet" href="portfoliostyles.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <div class="navbar">
-        <div class="nav-logo">
-            <img src="images/technify_logo.png" alt="Logo" class="logo">
+    <header class="header"> 
+        <nav class="navigation">
+            <a href="index.html" class="nav-logo"><img src="images/technify_transparent.png" alt="Technify Logo" class="logo"></a>
+            <ul class="navbar">
+                <li class="btn"><a href="index.html">Home</a></li>
+                <li class="btn"><a href="team.html">Team</a></li>
+                <li class="btn"><a href="portfolio.html">Portfolio</a></li> 
+                <li class="btn"><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="portfolio_section">
+        <h1>Our Projects</h1>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="images/portfolio-placeholder-1.jpg" class="gridimg">
+                <h2>NAU Foundation India</h2>
+                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. 
+                    Facilisis senectus torquent praesent egestas eros cursus eros sed. 
+                    Porttitor morbi penatibus morbi ad eu laoreet vitae.</p>
+            </div>
+            <div class="grid-item">
+                <img src="images/portfolio_placecholder_2.png" class="gridimg">
+                <h2>Coding for Social Good Nepal</h2>
+                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. 
+                    Facilisis senectus torquent praesent egestas eros cursus eros sed. 
+                    Porttitor morbi penatibus morbi ad eu laoreet vitae.</p>
+            </div>
+            <div class="grid-item">
+                <img src="images/project3.jpg" class="gridimg">
+                <h2>Project Name</h2>
+                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. 
+                    Facilisis senectus torquent praesent egestas eros cursus eros sed. 
+                    Porttitor morbi penatibus morbi ad eu laoreet vitae.</p>
+            </div>
+            <div class="grid-item">
+                <img src="images/project4.jpg" class="gridimg">
+                <h2>Project Name</h2>
+                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. 
+                    Facilisis senectus torquent praesent egestas eros cursus eros sed. 
+                    Porttitor morbi penatibus morbi ad eu laoreet vitae.</p>
+            </div>
         </div>
-        <ul class="nav-links">
-            <li><a href="#project1">NAU Foundation</a></li>
-            <li><a href="#project2">CoSoG Nepal</a></li>
-            <li><a href="#project3">Technify</a></li>
-        </ul>
-    </div>
+    </section>
 
-    <!-- Hero Section -->
-    <div class="hero-section">
-        <div class="hero-content">
-            <h1>Portfolio</h1>
-            <p>Selected web development projects.</p>
-        </div>
-    </div>
-
-    <!-- Projects Section -->
-    <div class="projects">
-        <section id="project1" class="project-section">
-            <h2>NAU Foundation Website</h2>
-            <p>
-                Developed a website for the Paryavaran Shala initiative by the NAU Foundation to support nature-based solutions in education.
-            </p>
-            <ul>
-                <li>Implemented a research repository for accessible documentation on nature-based solutions.</li>
-                <li>Created a section for case studies to provide replicable examples of successful interventions.</li>
-                <li>Documented pilot projects with detailed information on challenges and outcomes.</li>
-                <li>Integrated geotagging to map schools suitable for interventions and visualize potential impact.</li>
-            </ul>
-        </section>
-
-        <section id="project2" class="project-section">
-            <h2>Coding for Social Good Nepal</h2>
-            <p>
-                Designed and deployed a website for CoSoG, a nonprofit promoting computer science education in Nepal.
-            </p>
-            <ul>
-                <li>Developed pages for general information about the organization and its mission.</li>
-                <li>Showcased ongoing projects and news updates.</li>
-                <li>Created a resource hub for event schedules and educational materials.</li>
-                <li>Collaborated with executives to design a functional and user-friendly interface.</li>
-            </ul>
-        </section>
-
-        <section id="project3" class="project-section">
-            <h2>Technify Website</h2>
-            <p>
-                Rebuilt Technify's website using Laravel framework to improve functionality and user experience.
-            </p>
-            <ul>
-                <li>Cleaned up and optimized the existing code base.</li>
-                <li>Redesigned the UI/UX for better usability and appearance.</li>
-                <li>Rehosted the website on Heroku with the domain technifyinitiative.org.</li>
-            </ul>
-        </section>
-    </div>
-
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Portfolio</p>
+        <p>
+        &#64; 2024 Technify. All Rights Reserved.
+        </p>
+        <ul class="socials">
+         <li><a href="https://www.instagram.com/technifyduke/" target="_blank"><image src="images/ig.png" alt="Instagram Icon"></a></li>
+         <li><a href=""><image src="images/gmail.webp" alt="Gmail Icon"></image></a></li>
+         <li><a href="https://www.linkedin.com/company/technifyduke/" target="_blank"><image src="images/linkedin.png" alt="LinkedIN Icon"></image></a></li>
+        </ul>
     </footer>
 
     <script src="script.js"></script>

@@ -1,18 +1,18 @@
 :root {
-    --color-1: #759D97;
-    --color-2: #9DC9CA;
-    --color-3: #FEDC86;
-    --color-4: #9BC9CD;
-    --color-5: #2a3a3a;
+    --color-primary-accent: #759D97;
+    --color-secondary-bg: #E0F1F1;
+    --color-highlight: #d3b770;
+    --color-subtle-bg: #CFE6E7;
+    --color-primary-text: #354B4A;
+    --color-dark-bg: #426261;
 }
 
 
-
 body{
-    background-color: #9DC9CA;
-    padding-top: 70px;
+    background-color: var(--color-secondary-bg);
+    padding-top: 100px;
     height: 100%; /* Ensure the page takes up full height */
-    margin: 0;    /* Remove default margin */
+    margin: 0px;    /* Remove default margin */
     display: flex; /* Flex layout */
     flex-direction: column; /* Stack items vertically */
 }
@@ -20,11 +20,12 @@ body{
 /* TITLE */
 h1{
     text-align: center;
-    font-family: Verdana;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 60px; 
     margin-bottom: 30px;
     padding: 0;
-    color: var(--color-5);
+    color: var(--color-dark-bg);
+    margin-top: 100px;
 }
 
 .logo{
@@ -47,20 +48,23 @@ h1{
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background-color: var(--color-2);
     position: fixed;
-    width: 95%;
+    width: 100%;
     height: 10%;
     top: 0;
     left: 0;
     z-index: 1000;
+    background-color: var(--color-secondary-bg); /* Set a solid background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add shadow for depth */
+    backdrop-filter: blur(5px); /* Optional: apply blur effect */
 }
 
 
 .navbar {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap:20px;
+    margin-right: 70px;
 }
 
 .navbar .nav-logo{
@@ -68,24 +72,32 @@ h1{
     margin-right: auto;
 }
 
+.logo{
+    margin-top: -20px;
+}
+
 
 .navbar li{
     display: inline-block;
     text-align: center;
-    font-family: Verdana;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-top: 15px;
     margin-left: 10px;
+    
 }
 
 .btn a {
     font-size: large;
     padding: 10px;
-    color: var(--color-5);
+    color: var(--color-dark-bg);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
     border-radius: 20%;
+    text-decoration: none;
 }
 
 .btn a:hover {
-    color: var(--color-3);
+    color: var(--color-primary-text);
 }
 
 
@@ -112,10 +124,12 @@ h1{
 .grid-item h2{
     text-align: center;
     margin-left: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .grid-item p{
     text-align: center;
     margin-left: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .gridimg{ 
     height: 400px;
@@ -126,15 +140,16 @@ h1{
 
 /* FOOTER */
 footer {
-    background-color: var(--color-5);
+    background-color: var(--color-dark-bg);
     display:flex;
     justify-content: center;
     color: #efefef;
-    font-size: 29px;
-    font-family: Papyrus, Fantasy;
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding-top: 7px;
     margin-top: 10px;
     width: 100%;  /* Make sure the footer spans the entire width of the viewport */
+    height: 80px;
 }
 
 footer p{
@@ -150,10 +165,11 @@ footer p{
 .socials li {
     display: inline-block;
     margin-right: 10px;
+    margin-top: 10px;
 }
 .socials img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 
 }
 
