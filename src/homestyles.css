@@ -38,8 +38,9 @@ h1, h2, h3 {
     align-items: center;
     justify-content: space-between;
     padding: 20px; 
+    box-sizing: border-box;
     position: fixed;
-    width: 98%;
+    width: 100vw;
     height: 10%;
     top: 0;
     left: 0;

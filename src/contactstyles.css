@@ -1,13 +1,14 @@
 /* contactstyles.css */
 
 :root {
-    --color-primary-accent: #759D97;
-    --color-secondary-bg: #E0F1F1;
-    --color-highlight: #FEDC86;
-    --color-subtle-bg: #CFE6E7;
-    --color-primary-text: #354B4A;
-    --color-dark-bg: #426261;
+    --color-primary-accent: #759D97; /* Slightly muted teal for main accents */
+    --color-secondary-bg: #E0F1F1; /* Lightened version of --color-2 for subtle backgrounds */
+    --color-highlight: #FEDC86; /* Light yellow for highlights and calls to action */
+    --color-subtle-bg: #CFE6E7; /* Softened version of --color-4 */
+    --color-primary-text: #354B4A; /* Darkened version of --color-5 for improved readability */
+    --color-dark-bg: #426261; /* Original --color-5 for headers or footers */
 }
+
 /* Ensure the content fills the screen height */
 body, html {
     min-height: 100vh;
@@ -25,7 +26,7 @@ body, html {
     align-items: center;
     text-align: center;
     padding: 20px;
-    background-color: var(--color-subtle-bg);
+    background-color: var(--color-secondary-bg);
 }
 
 .footer {
@@ -42,8 +43,9 @@ body, html {
     align-items: center;
     justify-content: space-between;
     padding: 20px; 
+    box-sizing: border-box;
     position: fixed;
-    width: 98%;
+    width: 100vw;
     height: 10%;
     top: 0;
     left: 0;
