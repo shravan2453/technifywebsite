@@ -137,6 +137,14 @@ h1{
     
 }
 
+/* Social REACH OUT */
+.socials-about img{
+    margin-top: 30px;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
 
 /* FOOTER */
 footer {
