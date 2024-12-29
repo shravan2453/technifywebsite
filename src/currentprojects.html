@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Projects</title>
+    <link rel="icon" type="image/x-icon" href="images/technify logo.png">
+    <link rel="stylesheet" href="currentprojectsstyles.css">
+    <style>
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .project-card.expanded {
+            grid-column: 1 / -1;
+            min-height: 400px;
+        }
+
+        .card-preview {
+            padding: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .ngo-logo {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .preview-content {
+            flex: 1;
+        }
+
+        .preview-content h2 {
+            margin: 0;
+            font-size: 1.25rem;
+            color: #333;
+        }
+
+        .preview-content p {
+            margin: 0.5rem 0 0;
+            font-size: 0.9rem;
+            color: #666;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .card-details {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            padding: 0 1.5rem;
+        }
+
+        .expanded .card-details {
+            max-height: 1000px;
+            padding-bottom: 1.5rem;
+        }
+
+        .details-content {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .details-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .details-gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .close-button {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            display: none;
+        }
+
+        .expanded .close-button {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header class="header"> 
+        <nav class="navigation">
+            <a href="index.html" class="nav-logo"><img src="images/technify_transparent.png" alt="Technify Logo" class="logo"></a>
+            <ul class="navbar">
+                <li class="btn"><a href="index.html">Home</a></li>
+                <li class="btn"><a href="team.html">About Us</a></li>
+                <li class="btn"><a href="currentprojects.html">Current Projects</a></li> 
+                <li class="btn"><a href="pastprojects.html">Past Projects</a></li> 
+                <li class="btn"><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="portfolio_section">
+        <h1>Current Projects</h1>
+        <div class="projects-grid">
+            <div class="project-card">
+                <button class="close-button">&times;</button>
+                <div class="card-preview">
+                    <img src="images/nau_logo.png" alt="NAU Foundation Logo" class="ngo-logo">
+                    <div class="preview-content">
+                        <h2>NAU Foundation India</h2>
+                        <p>Developing a website to provide resources and raise awareness for nature-based solutions in education.</p>
+                    </div>
+                </div>
+                <div class="card-details">
+                    <div class="details-content">
+                        <div class="team-members">
+                            <p><strong>Project Manager:</strong> Soojin Lee</p>
+                            <p><strong>Software Engineers:</strong> Alexandra Green, Nathaniel Corey, Amanda Nemshin, Lisa Zhao</p>
+                            <p><strong>User Interface/User Experience:</strong> Eva Noel</p>
+                        </div>
+                        <p>The Paryavaran Shala (School for Environment) is an initiative created by the Nature, Art and Us (NAU) Foundation in India. This initiative aims to enhance environmental education in India, cultivating eco-conscious citizens and sustainable communities. They integrate nature-based solutions (NbS) into Anganwadi centers (rural child care centers) and government schools.</p>
+                        <p>We are developing a website for them to act as a resource hub and raise awareness. Key features include:</p>
+                        <ul>
+                            <li><strong>Research Repository:</strong> Provide accessible, in-depth research on nature-based solutions and their impact on educational environments.</li>
+                            <li><strong>Case Studies:</strong> Showcase schools and Anganwadi centers successfully implementing nature-based interventions, offering practical insights for replication.</li>
+                            <li><strong>Pilot Projects:</strong> Highlight pilot interventions, documenting their implementation process, challenges, and positive impacts.</li>
+                            <li><strong>Geotagging for Impact:</strong> Use geotagging technology to map potential schools for NbS interventions and visualize possible impacts.</li>
+                        </ul>
+                        <div class="details-gallery">
+                            <img src="images/nau_project1.jpg" alt="NAU Project image 1">
+                            <img src="images/nau_project2.jpg" alt="NAU Project image 2">
+                            <img src="images/nau_project3.jpg" alt="NAU Project image 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+    
+            <div class="project-card">
+                <button class="close-button">&times;</button>
+                <div class="card-preview">
+                    <img src="images/csg_logo.png" alt="CSG Nepal Logo" class="ngo-logo">
+                    <div class="preview-content">
+                        <h2>Coding for Social Good Nepal</h2>
+                        <p>Empowering communities through technology education and digital literacy programs.</p>
+                    </div>
+                </div>
+                <div class="card-details">
+                    <div class="details-content">
+                        <div class="team-members">
+                            <p><strong>Project Manager:</strong> Gian Castillero</p>
+                            <p><strong>Software Engineers:</strong> Brandon Cheng, Amogh Manral, Keerthana Venkatesh, Ria Khazanchi</p>
+                        </div>
+                        <p>CoSoG is a registered nonprofit organization in Kathmandu, Nepal aimed at promoting computer science education and curriculums for high schoolers in Nepal. The organization conducts digital literacy sessions, hackathons, olympiads, compiles resources for students, and encourages the presence of computer science clubs on campuses.</p>
+                        <p>We are currently developing a website for them which will serve as a resource hub and help raise awareness. Primary website features will include:</p>
+                        <ul>
+                            <li><strong>General Information:</strong> Introduce the organization, its members, and its mission.</li>
+                            <li><strong>Current Projects:</strong> Showcase latest news reports and ongoing projects as provided by executives.</li>
+                            <li><strong>Resources:</strong> Highlight some of the organization's internal resources and scheduling for digital literacy sessions.</li>
+                        </ul>
+                        <div class="details-gallery">
+                            <img src="images/portfolio_placecholder_2.png" alt="CSG Project image 1">
+                            <img src="images/project3.jpg" alt="CSG Project image 2">
+                            <img src="images/project4.jpg" alt="CSG Project image 3">
+                        </div>
+                    </div>
+                </div>
+            </div>            
+    
+            <div class="project-card">
+                <button class="close-button">&times;</button>
+                <div class="card-preview">
+                    <img src="images/technify logo.png" alt="Technify Logo" class="ngo-logo">
+                    <div class="preview-content">
+                        <h2>Technify Internal Website</h2>
+                        <p>Developing a website to act as a resource hub and communication platform for the organization.</p>
+                    </div>
+                </div>
+                <div class="card-details">
+                    <div class="details-content">
+                        <div class="team-members">
+                            <p><strong>Project Manager:</strong> Emma Chua</p>
+                            <p><strong>Software Engineers:</strong> Arnav Meduri, Shravan Selvavel, Faiz Ali</p>
+                        </div>
+                        <p>Technify currently only has LinkedIn and Instagram as a primary source of media exposure. The previous website was deactivated, so the club needs to revamp the website almost from scratch.</p>
+                        <p>We are developing a new website to serve as a resource hub, helping to raise awareness about Technify's initiatives and providing tools for members and the community. Key features include:</p>
+                        <ul>
+                            <li><strong>General Information:</strong> Highlight the organization’s mission, team members, and history.</li>
+                            <li><strong>Project Showcase:</strong> Display ongoing and completed projects to inspire and inform visitors.</li>
+                            <li><strong>Media and Resources:</strong> Provide centralized access to resources, news, and updates.</li>
+                        </ul>
+                        <div class="details-gallery">
+                            <img src="images/project3.jpg" alt="Project 3 image 1">
+                            <img src="images/project4.jpg" alt="Project 3 image 2">
+                            <img src="images/portfolio-placeholder-1.jpg" alt="Project 3 image 3">
+                        </div>
+                    </div>
+                </div>
+    
+        </div>
+    </section>
+
+    <footer>
+        <p>&#64; 2024 Technify. All Rights Reserved.</p>
+        <ul class="socials">
+            <li><a href="https://www.instagram.com/technifyduke/" target="_blank"><img src="images/ig.png" alt="Instagram Icon"></a></li>
+            <li><a href=""><img src="images/gmail.webp" alt="Gmail Icon"></a></li>
+            <li><a href="https://www.linkedin.com/company/technifyduke/" target="_blank"><img src="images/linkedin.png" alt="LinkedIN Icon"></a></li>
+        </ul>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.project-card');
+            
+            cards.forEach(card => {
+                card.addEventListener('click', function(e) {
+                    if (e.target.classList.contains('close-button')) {
+                        this.classList.remove('expanded');
+                        return;
+                    }
+                    
+                    if (!this.classList.contains('expanded')) {
+                        cards.forEach(c => c.classList.remove('expanded'));
+                    }
+                    
+                    this.classList.toggle('expanded');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
