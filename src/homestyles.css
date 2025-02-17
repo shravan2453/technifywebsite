@@ -42,6 +42,7 @@ body {
     display: flex;
     gap: 20px;
     padding: 0;
+    margin-left: 40px;
 }
 .navbar ul li {
     display: inline;

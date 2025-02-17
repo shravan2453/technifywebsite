@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 :root {
     --color-primary-accent: #759D97;
-    --color-secondary-bg: #E0F1F1;
+    --color-secondary-highlight: #d8ae5e;
     --color-highlight: #fdda87;
+    --color-secondary-bg: #E0F1F1;
     --color-subtle-bg: #CFE6E7;
     --color-primary-text: #354B4A;
     --color-dark-bg: #27494c;
@@ -13,7 +14,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: var(--color-secondary-bg);
+    background-color: var(--color-subtle-bg);
     color: var(--color-primary-text);
 }
 .navbar {
@@ -30,6 +31,7 @@ body {
     display: flex;
     gap: 20px;
     padding: 0;
+    margin-left: 40px;
 }
 .navbar ul li {
     display: inline;
@@ -42,4 +44,56 @@ body {
 }
 .navbar ul li a:hover {
     color: var(--color-highlight);
+}
+/* Contact Section */
+.contact-section {
+    padding: 50px 20px;
+}
+
+.contact-section h1 {
+    font-size: 100px;
+    font-weight: 700;
+    color: var(--color-dark-bg);
+    margin: 0px;
+}
+
+.subtext {
+    font-size: 18px;
+    margin-bottom: 40px;
+
+}
+
+/* Info Box */
+.info-box {
+    background-color: var(--color-dark-bg);
+    color: white;
+    padding: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Buttons */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: var(--color-secondary-highlight);
+    color: var(--color-dark-bg);
+    font-weight: 700;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #b79a50;
+    color: white;
 }
