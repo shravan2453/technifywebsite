@@ -4,130 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Current Projects</title>
-    <link rel="icon" type="image/x-icon" href="images/technify logo.png">
     <link rel="stylesheet" href="currentprojectsstyles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            padding: 2rem;
-        }
-
-        .project-card {
-            background: #27494c;
-            border-radius: 15px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            position: relative;
-        }
-
-        .project-card.expanded {
-            grid-column: 1 / -1;
-            min-height: 400px;
-        }
-
-        .card-preview {
-            padding: 1.5rem;
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .ngo-logo {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-
-        .preview-content {
-            flex: 1;
-        }
-
-        .preview-content h2 {
-            margin: 0;
-            font-size: 1.5rem;
-            color: #fdda87;
-            text-align: center;
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        .preview-content p {
-            margin: 0.5rem 0 0;
-            font-size: 1rem;
-            color: #d8ae5e;
-            display: none;
-            text-align: center;
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        .card-details {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease;
-            padding: 0 1.5rem;
-        }
-
-        .expanded .card-details {
-            max-height: 1000px;
-            padding-bottom: 1.5rem;
-        }
-
-        .details-content {
-            display: grid;
-            gap: 1rem;
-        }
-
-        .details-gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
-        }
-
-        .details-gallery img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 8px;
-        }
-
-        .close-button {
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            cursor: pointer;
-            display: none;
-            color: white;
-        }
-
-        .expanded .close-button {
-            display: block;
-        }
-    </style>
 </head>
 <body>
-    <header class="header"> 
-        <nav class="navigation">
-            <a href="index.html" class="nav-logo"><img src="images/technify_transparent.png" alt="Technify Logo" class="logo"></a>
-            <ul class="navbar">
-                <li class="btn"><a href="index.html">Home</a></li>
-                <li class="btn"><a href="team.html">About Us</a></li>
-                <li class="btn"><a href="currentprojects.html">Current Projects</a></li> 
-                <li class="btn"><a href="pastprojects.html">Past Projects</a></li> 
-                <li class="btn"><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="navbar">
+        <div class="logo">TECHNIFY</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="team.html">About Us</a></li>
+            <li><a href="currentprojects.html">Current Projects</a></li>
+            <li><a href="pastprojects.html">Past Projects</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
 
     <section class="portfolio_section">
-        <h1>Current Projects</h1>
+        <h1>CURRENT PROJECTS</h1>
+        <p class="subtext">Our teams are working on the following initiatives to create positive impact through technology.</p>
         <div class="projects-grid">
             <div class="project-card">
                 <button class="close-button">&times;</button>
@@ -162,7 +56,6 @@
                 </div>
             </div>
             
-    
             <div class="project-card">
                 <button class="close-button">&times;</button>
                 <div class="card-preview">
@@ -212,7 +105,7 @@
                         <p>Technify currently only has LinkedIn and Instagram as a primary source of media exposure. The previous website was deactivated, so the club needs to revamp the website almost from scratch.</p>
                         <p>We are developing a new website to serve as a resource hub, helping to raise awareness about Technify's initiatives and providing tools for members and the community. Key features include:</p>
                         <ul>
-                            <li><strong>General Information:</strong> Highlight the organization’s mission, team members, and history.</li>
+                            <li><strong>General Information:</strong> Highlight the organization's mission, team members, and history.</li>
                             <li><strong>Project Showcase:</strong> Display ongoing and completed projects to inspire and inform visitors.</li>
                             <li><strong>Media and Resources:</strong> Provide centralized access to resources, news, and updates.</li>
                         </ul>
@@ -223,7 +116,7 @@
                         </div>
                     </div>
                 </div>
-    
+            </div>
         </div>
     </section>
 

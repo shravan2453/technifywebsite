@@ -1,113 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 :root {
     --color-primary-accent: #759D97;
+    --color-secondary-highlight: #d8ae5e;
+    --color-highlight: #fdda87;
     --color-secondary-bg: #E0F1F1;
-    --color-highlight: #d3b770;
     --color-subtle-bg: #CFE6E7;
     --color-primary-text: #354B4A;
-    --color-dark-bg: #426261;
+    --color-dark-bg: #27494c;
 }
 
 body {
-    background-color: var(--color-secondary-bg);
-    padding-top: 100px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-subtle-bg);
+    color: var(--color-primary-text);
     min-height: 100vh;
-    height: 100%;
-    margin: 0px;
     display: flex;
     flex-direction: column;
-    font-family: 'Montserrat', sans-serif;
 }
 
-.portfolio_section,
-.past-projects {
-    flex: 1;
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-dark-bg);
+    padding: 15px 20px;
+    color: white;
 }
 
 .logo {
-    height: 150px;
-    margin-left: 20px;
-    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: 700;
 }
 
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-}
-
-.navigation {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    position: fixed;
-    width: 98%;
-    height: 10%;
-    top: 0;
-    left: 0;
-    z-index: 10000;
-    background-color: var(--color-secondary-bg);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-}
-
-.navbar {
+.navbar ul {
     list-style: none;
     display: flex;
     gap: 20px;
-    margin-right: 47px;
-}
-
-.navbar .nav-logo {
-    align-items: left;
-    margin-right: auto;
-}
-
-.navbar li {
-    display: inline-block;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    margin-top: 15px;
-    margin-left: 10px;
-}
-
-.btn a {
-    font-size: large;
-    padding: 10px;
-    color: var(--color-dark-bg);
-    font-family: 'Montserrat', sans-serif;
-    border-radius: 20%;
-    text-decoration: none;
-}
-
-.btn a:hover {
-    color: var(--color-primary-text);
-}
-
-h1 {
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 60px;
-    margin-bottom: 30px;
     padding: 0;
-    color: var(--color-dark-bg);
-    margin-top: 100px;
+    margin-left: 40px;
 }
 
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: var(--color-highlight);
+}
+
+/* Portfolio Section */
+.portfolio_section {
+    padding: 50px 20px;
+    flex: 1;
+}
+
+.portfolio_section h1 {
+    font-size: 100px;
+    font-weight: 700;
+    color: var(--color-dark-bg);
+    margin: 0;
+    text-align: center;
+}
+
+.subtext {
+    font-size: 18px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Projects Grid */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-    padding: 20px 40px;
-    margin-bottom: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
+/* Project Card Styles */
 .project-card {
-    background: #27494c;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background: var(--color-dark-bg);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
     transition: all 0.3s ease;
     cursor: pointer;
     position: relative;
@@ -119,43 +106,56 @@ h1 {
 }
 
 .card-preview {
+    padding: 1.5rem;
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
 .ngo-logo {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     object-fit: cover;
 }
 
+.preview-content {
+    flex: 1;
+}
+
 .preview-content h2 {
-    color: #fdda87;
-    margin: 0 0 10px 0;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.75rem;
+    margin: 0;
+    font-size: 1.5rem;
+    color: var(--color-highlight);
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
 }
 
 .preview-content p {
-    color: #d8ae5e;
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.6;
-    margin: 0;
+    margin: 0.5rem 0 0;
+    font-size: 1rem;
+    color: var(--color-secondary-highlight);
     display: none;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .card-details {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
+    padding: 0 1.5rem;
 }
 
 .expanded .card-details {
     max-height: 1000px;
-    margin-top: 20px;
+    padding-bottom: 1.5rem;
+}
+
+.details-content {
+    display: grid;
+    gap: 1rem;
 }
 
 .details-content p, 
@@ -163,95 +163,68 @@ h1 {
     color: white;
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
-    margin-bottom: 1rem;
 }
 
 .team-members {
-    margin-bottom: 1.5rem;
-}
-
-.team-members p {
-    margin-bottom: 0.5rem;
-}
-
-.details-content ul {
-    list-style-position: inside;
-    padding-left: 1rem;
-    margin-bottom: 1.5rem;
-}
-
-.details-content li {
-    margin-bottom: 0.5rem;
-}
-
-.details-content strong {
-    color: #fdda87;
+    margin-bottom: 1rem;
 }
 
 .details-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
+    gap: 1rem;
+    margin-top: 1.5rem;
 }
 
 .details-gallery img {
     width: 100%;
-    height: 250px;
+    height: 200px;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 .close-button {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 1rem;
+    right: 1rem;
     background: none;
     border: none;
-    font-size: 24px;
-    color: white;
+    font-size: 1.5rem;
     cursor: pointer;
     display: none;
-    padding: 5px 10px;
-    border-radius: 50%;
-    transition: background-color 0.2s ease;
-}
-
-.close-button:hover {
-    background-color: var(--color-subtle-bg);
+    color: white;
 }
 
 .expanded .close-button {
     display: block;
 }
 
+/* Footer */
 footer {
     background-color: var(--color-dark-bg);
     display: flex;
     justify-content: center;
-    color: #efefef;
+    color: white;
     font-size: 15px;
-    font-family: 'Montserrat', sans-serif;
-    padding-top: 7px;
+    padding: 20px;
     margin-top: auto;
-    width: 100%;
-    height: 80px;
 }
 
 footer p {
-    margin-top: 31px;
+    margin: 10px 0;
 }
 
 .socials {
     list-style-type: none;
     padding: 0;
     margin-left: 25px;
+    display: flex;
+    align-items: center;
 }
 
 .socials li {
     display: inline-block;
     margin-right: 10px;
-    margin-top: 10px;
 }
 
 .socials img {
@@ -260,19 +233,11 @@ footer p {
 }
 
 @media (max-width: 768px) {
+    .portfolio_section h1 {
+        font-size: 48px;
+    }
+    
     .projects-grid {
         grid-template-columns: 1fr;
-    }
-    
-    h1 {
-        font-size: 40px; 
-    }
-    
-    .navigation {
-        padding: 10px;
-    }
-    
-    .logo {
-        height: 100px;
     }
 }
