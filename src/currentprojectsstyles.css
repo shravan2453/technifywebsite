@@ -10,11 +10,17 @@
 body {
     background-color: var(--color-secondary-bg);
     padding-top: 100px;
+    min-height: 100vh;
     height: 100%;
     margin: 0px;
     display: flex;
     flex-direction: column;
     font-family: 'Montserrat', sans-serif;
+}
+
+.portfolio_section,
+.past-projects {
+    flex: 1;
 }
 
 .logo {
