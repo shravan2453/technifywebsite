@@ -1,31 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 :root {
     --color-primary-accent: #759D97;
     --color-secondary-bg: #E0F1F1;
-    --color-highlight: #d3b770;
+    --color-highlight: #fdda87;
     --color-subtle-bg: #CFE6E7;
     --color-primary-text: #354B4A;
-    --color-dark-bg: #426261;
+    --color-dark-bg: #27494c;
 }
 
-body{
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
     background-color: var(--color-secondary-bg);
-    padding-top: 100px;
-    height: 100%; /* Ensure the page takes up full height */
-    margin: 0px;    /* Remove default margin */
-    display: flex; /* Flex layout */
-    flex-direction: column; /* Stack items vertically */
+    color: var(--color-primary-text);
 }
+
 
 /* TITLE */
 h1{
     text-align: center;
-    font-family: "Montserrat", serif;
-    font-size: 120px; 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 130px;
     margin-bottom: 30px;
     padding: 0;
-    color: #27494c;
-    margin-top: 40px;
-    margin-bottom: 60px;
+    color: var(--color-dark-bg);
+    margin-top: 70px;
 }
 
 h2{
@@ -40,73 +42,35 @@ h2{
 }
 
 
-/* OVERALL NAVBAR */
-.navigation{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    position: fixed;
-    width: 100%;
-    height: 7%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    background-color: #27494c; /* Set a solid background color */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add shadow for depth */
-    backdrop-filter: blur(5px); /* Optional: apply blur effect */
-}
-
-
+/* Nav Bar */
 .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-dark-bg);
+    padding: 15px 20px;
+    color: white;
+}
+.logo { font-size: 24px; font-weight: 700; }
+.navbar ul {
     list-style: none;
     display: flex;
-    gap:20px;
-    margin-right: 70px;
+    gap: 20px;
+    padding: 0;
+    margin-left: 40px;
 }
-
-.navbar .nav-logo{
-    align-items: left;
-    margin-right: auto;
+.navbar ul li {
+    display: inline;
 }
-
-.logo{
-    margin-top: -20px;
-}
-
-
-.navbar li{
-    display: inline-block;
-    text-align: center;
-    font-family: "Montserrat", serif;
-    margin-left: 10px;
-    
-}
-
-.header_text{
-    font-size: 45px;
-    padding: 10px;
+.navbar ul li a {
     color: white;
-    font-family: "Montserrat", serif;
-    border-radius: 20%;
     text-decoration: none;
     font-weight: 700;
+    transition: color 0.3s;
 }
-
-.btn a {
-    font-size: 22px;
-    padding: 10px;
-    color: white;
-    font-family: "Montserrat", serif;
-    border-radius: 20%;
-    text-decoration: none;
+.navbar ul li a:hover {
+    color: var(--color-highlight);
 }
-
-.btn a:hover {
-    color: var( --color-primary-accent);
-}
-
-
 
 
 
@@ -127,8 +91,9 @@ h2{
     padding: 60px;
 }
 
-.role{
-    transform: rotate(90deg);
+.title{
+    display: flex;
+    flex-direction: column;
 }
 
 .text-role{
@@ -146,31 +111,24 @@ h2{
     
 }
 
-.internal-grid h3{
-    font-family: "Montserrat", serif;
-    color: #d8ae5e;
-    font-size: 29px;
-}
-
 .grid-item p{
     text-align: left;
-    font-size: 20px;
+    font-size: 18px;
     font-family: "Montserrat", serif;
 }
 
 .gridimg{ 
     height: 470px;
     width: 360px;
+    text-align: center;
+    justify-content: center;
 }
 
-#specialcase{
-    margin-left: 0px;
+.role h3{
+    font-size: 36px;
+    color: #dca743;
+    font-style: italic;
 }
-
-#specialtext{
-    margin-left: -50px;
-}
-
 
 /* Social REACH OUT */
 .socials-about img{
