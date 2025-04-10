@@ -66,6 +66,7 @@ body {
 
 .navbar ul li a {
   color: white;
+  font-weight: 700;
   text-decoration: none;
   transition: color 0.3s;
 }
