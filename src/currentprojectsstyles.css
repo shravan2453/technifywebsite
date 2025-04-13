@@ -108,6 +108,12 @@ body {
     min-height: 400px;
 }
 
+/* Add hover transformation to the individual card */
+.project-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
 .card-preview {
     padding: 1.5rem;
     display: flex;
